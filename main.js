@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       const maxCount = parseFloat(rangeFilterCountMax.value) || Infinity;
   
       const filteredProducts = productsData.filter(product => {
-        return product.quantity >= minCount && product.quantity <= maxCount;
+        return product.price >= minCount && product.price <= maxCount;
       });
   
       displayProducts(filteredProducts);
